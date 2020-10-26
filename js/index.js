@@ -37,6 +37,70 @@ const siteContent = {
   },
 };
 
+const nav1 = document.querySelector('a:nth-of-type(1)');
+nav1.textContent = siteContent.nav["nav-item-1"];
+const nav2 = document.querySelector('a:nth-of-type(2)');
+nav2.textContent = siteContent.nav["nav-item-2"];
+const nav3 = document.querySelector('a:nth-of-type(3)');
+nav3.textContent = siteContent.nav["nav-item-3"];
+const nav4 = document.querySelector('a:nth-of-type(4)');
+nav4.textContent = siteContent.nav["nav-item-4"];
+const nav5 = document.querySelector('a:nth-of-type(5)');
+nav5.textContent = siteContent.nav["nav-item-5"];
+const nav6 = document.querySelector('a:nth-of-type(6)');
+nav6.textContent = siteContent.nav["nav-item-6"];
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
-logo.setAttribute('src', siteContent["nav"]["img-src"])
+logo.setAttribute('src', siteContent["nav"]["img-src"]);
+
+
+const ctah = document.querySelector('.cta h1');
+ctah.textContent = siteContent.cta["h1"];
+const ctabutt = document.querySelector('.cta button');
+ctabutt.textContent = siteContent.cta["button"]
+const ctaImage = document.getElementById('cta-img');
+ctaImage.setAttribute("src", siteContent.cta["img-src"]);
+
+
+const mcTopH = document.querySelector('.main-content .top-content .text-content h4');
+mcTopH.textContent = siteContent["main-content"]["features-h4"];
+const mcTopP = document.querySelector('.main-content .top-content .text-content p');
+mcTopP.textContent = siteContent["main-content"]["features-content"];
+const mcTopH2 = document.querySelector('.main-content .top-content .text-content:nth-of-type(2) h4');
+mcTopH2.textContent = siteContent["main-content"]["about-h4"];
+const mcTopP2 = document.querySelector('.main-content .top-content .text-content:nth-of-type(2) p');
+mcTopP2.textContent = siteContent["main-content"]["about-content"];
+const mcMidImg = document.getElementById('middle-img');
+mcMidImg.setAttribute("src", siteContent["main-content"]["middle-img-src"]);
+
+
+const mcBotH = document.querySelector(".main-content .bottom-content .text-content h4");
+mcBotH.textContent = siteContent["main-content"]["services-h4"];
+const mcBotP = document.querySelector(".main-content .bottom-content .text-content p");
+mcBotP.textContent = siteContent["main-content"]["services-content"];
+const mcBotH2 = document.querySelector(".main-content .bottom-content .text-content:nth-of-type(2) h4");
+mcBotH.textContent = siteContent["main-content"]["product-h4"];
+const mcBotP2 = document.querySelector(".main-content .bottom-content .text-content:nth-of-type(2) p");
+mcBotP2.textContent = siteContent["main-content"]["product-content"];
+const mcBotH3 = document.querySelector(".main-content .bottom-content .text-content:nth-of-type(3) h4");
+mcBotH3.textContent = siteContent["main-content"]["vision-h4"];
+const mcBotP3 = document.querySelector(".main-content .bottom-content .text-content:nth-of-type(3) p");
+mcBotP3.textContent = siteContent["main-content"]["vision-content"];
+
+
+const contactH = document.querySelector('.contact h4');
+contactH.textContent = siteContent["contact"]["contact-h4"];
+const contactP = document.querySelector('.contact p');
+contactP.textContent = siteContent["contact"]["address"];
+const contactP2 = document.querySelector('.contact p:nth-of-type(2)');
+contactP2.textContent = siteContent["contact"]["phone"];
+const contactP3 = document.querySelector('.contact p:nth-of-type(3)');
+contactP2.textContent = siteContent["contact"]["email"];
+
+
+const footerP = document.querySelector("footer p");
+footerP.textContent = siteContent["footer"]["copyright"];
+
+const allLinks = document.querySelectorAll("nav a");
+const rArray = Array.from(allLinks);
+rArray.forEach( item => item.style.color = "green")
