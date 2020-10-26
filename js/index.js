@@ -101,6 +101,11 @@ contactP2.textContent = siteContent["contact"]["email"];
 const footerP = document.querySelector("footer p");
 footerP.textContent = siteContent["footer"]["copyright"];
 
+const newHeader = document.createElement("a")
+
+document.querySelector("nav").appendChild("newHeader")
+document.querySelector("nav").appendChild("newHeader")
+
 const allLinks = document.querySelectorAll("nav a");
 const rArray = Array.from(allLinks);
 rArray.forEach( item => item.style.color = "green")
